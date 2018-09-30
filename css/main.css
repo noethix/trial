@@ -1,43 +1,147 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:400,700|Fredoka+One|Nunito:400,800,900|Poiret+One|Quicksand:400,500,700';
+
+
+html,
 body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  font-family: 'comfortaa', sans-serif;
+  text-align: center;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul.posts li {
-    list-style: none;
+/* Nav bar */
+
+ nav ul {
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  background-color: #Fff;
+  font-family: "comfortaa",sans-serif; 
+  font-size: 1.2em; 
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 30px; 
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;  
+}
+nav ul li a:hover {
+  color: #ababab;
+}
+
+/* about me */
+
+#welcome-section {
+  top: 20;
+  line-height: 1.6;
+  background: #F5F5F5;
+  min-height: 55vh;
+  padding-top: 45vh;
+  text-align: 
+}
+  
+/* the projects section */
+
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+  padding-bottom: 60px;
+  background-color: #dcdcdc;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #111;
+  font-weight: normal;
+}
+
+.project {
+  text-decoration: none;
+  background-color: #c4c4c4;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid #ababab;
+  border-radius: 5px;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid #ababab;
+  border-radius: 5px;
+}
+
+.project-title {
+  color: #111;
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+.project-title:hover {
+  color: #939393;
+  
+}
+
+.show-all {
+  color: #111;
+  font-weight: bold;
+  background-color: #c4c4c4;
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  padding: 20px;
+  border: 2px solid #ababab;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.show-all:hover {
+  color: #111;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #c4c4c4;
+  text-align: center;
+  text-decoration: none;
+  width: 80px;
+  padding: 20px;
+  border: 2px solid #ababab;
+  border-radius: 100px;
+}
+
+/* contact */
+
+.contact {
+  background-color: #ababab;
+  padding: 60px ;
+  line-height: 1.6;
+}
+
+.contact-details {
+  padding: 60px;
+  display: inline-block;
+  
+}
+
+/* mobile section */
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
 }
